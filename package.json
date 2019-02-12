@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "test": "jasmine",
-    "test-cover": "istanbul cover --include-all-sources spec/specs.js && istanbul check-coverage"
+    "test-cover": "istanbul cover --include-all-sources spec/specs.js && istanbul check-coverage --statements 90 --functions 90 --lines 90"
   },
   "keywords": [
     "istanbul"
