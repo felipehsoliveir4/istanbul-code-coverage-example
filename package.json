@@ -21,6 +21,5 @@
     "supertest": "^3.0.0",
     "jasmine-supertest": "^1.0.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
