@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "jasmine",
+    "test": "jasmine spec/unit/index.spec.js",
     "test-cover": "istanbul cover --include-all-sources spec/specs.js && istanbul check-coverage --statements 90 --functions 90 --lines 90"
   },
   "keywords": [
@@ -14,12 +14,15 @@
   "author": "Tal Kaminsky",
   "license": "MIT",
   "devDependencies": {
-    "jasmine": "^2.8.0",
-    "jasmine-node": "^1.14.5",
     "istanbul": "^0.4.5",
+    "jasmine": "^2.8.0",
     "jasmine-console-reporter": "^2.0.1",
-    "supertest": "^3.0.0",
-    "jasmine-supertest": "^1.0.0"
+    "jasmine-node": "^1.14.5",
+    "jasmine-supertest": "^1.0.0",
+    "supertest": "^3.0.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "express": "^4.16.4",
+    "yarn": "^1.13.0"
+  }
 }
